@@ -1,5 +1,6 @@
 FROM alpine:3.12
 
+ENV LANG C.UTF-8
 
 # 设置时区
 RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories
