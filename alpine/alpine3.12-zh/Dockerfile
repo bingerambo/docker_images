@@ -1,4 +1,4 @@
-FROM alpine3.12-glibc:v1
+FROM digiboy2008/alpine3.12-glibc:v1
 
 ENV LANG C.UTF-8
 
