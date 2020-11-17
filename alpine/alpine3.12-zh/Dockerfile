@@ -1,9 +1,9 @@
-FROM digiboy2008/alpine3.12-glibc:v1
+FROM alpine3.12-glibc:v1
 
 ENV LANG C.UTF-8
 
 # 设置时区
-ENV TZ=Asia/Shanghai
+ENV TZ Asia/Shanghai
 # RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories
 RUN apk add --no-cache tzdata \
     && ln -sf /usr/share/zoneinfo/$TZ /etc/localtime \
